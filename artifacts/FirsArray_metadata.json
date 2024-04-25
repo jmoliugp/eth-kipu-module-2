@@ -1,0 +1,127 @@
+{
+	"compiler": {
+		"version": "0.8.25+commit.b61c2a91"
+	},
+	"language": "Solidity",
+	"output": {
+		"abi": [
+			{
+				"inputs": [
+					{
+						"internalType": "string",
+						"name": "myInfo",
+						"type": "string"
+					}
+				],
+				"name": "addInfo",
+				"outputs": [
+					{
+						"internalType": "uint256",
+						"name": "index",
+						"type": "uint256"
+					}
+				],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "uint256",
+						"name": "index",
+						"type": "uint256"
+					}
+				],
+				"name": "getOneInfo",
+				"outputs": [
+					{
+						"internalType": "string",
+						"name": "",
+						"type": "string"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "listAllInfo",
+				"outputs": [
+					{
+						"internalType": "string[]",
+						"name": "",
+						"type": "string[]"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "uint256",
+						"name": "index",
+						"type": "uint256"
+					},
+					{
+						"internalType": "string",
+						"name": "newInfo",
+						"type": "string"
+					}
+				],
+				"name": "updateInfo",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			}
+		],
+		"devdoc": {
+			"author": "Solange Gueiros",
+			"kind": "dev",
+			"methods": {},
+			"title": "Concepts: array = list of infos stored",
+			"version": 1
+		},
+		"userdoc": {
+			"kind": "user",
+			"methods": {
+				"addInfo(string)": {
+					"notice": "Graba nuevos valores en el array usando push() index devuelve la posición en la que se grabó el valor "
+				},
+				"getOneInfo(uint256)": {
+					"notice": "Devuelve el valor almacenado en la posición index del array Verifica que la posición sea válida, sino devuelve un error"
+				},
+				"updateInfo(uint256,string)": {
+					"notice": "Modifica el valor de la posición index del array con un nuevo valor Verifica que la posición sea válida, sino devuelve un error"
+				}
+			},
+			"version": 1
+		}
+	},
+	"settings": {
+		"compilationTarget": {
+			"playground4.sol": "FirsArray"
+		},
+		"evmVersion": "cancun",
+		"libraries": {},
+		"metadata": {
+			"bytecodeHash": "ipfs"
+		},
+		"optimizer": {
+			"enabled": false,
+			"runs": 200
+		},
+		"remappings": []
+	},
+	"sources": {
+		"playground4.sol": {
+			"keccak256": "0x926122185b7914efedb82835a6c2b41b3ae493a2f2265028957c34e6ab7700de",
+			"license": "MIT",
+			"urls": [
+				"bzz-raw://937bc31ccbf52746614bd1ad2d3284a602f8df4772048084bad0e12f48310f4e",
+				"dweb:/ipfs/QmX15UQGR5KnjuvJox65eAYC1yBaaGyVXpGC9dP8Gxjnhu"
+			]
+		}
+	},
+	"version": 1
+}
